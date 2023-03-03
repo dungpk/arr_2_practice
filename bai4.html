@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<h3></h3>
+
+</body>
+
+<script>
+    let words =0;
+    let string= prompt("Nhap chuoi: ");
+    let charArr = string.split(" ");
+    for(let i=0;i<charArr.length;i++)
+    {
+        if(charArr[i].trim() != ""){
+            words++;
+        }
+    }
+
+    document.write("number of word: "+words);
+
+
+</script>
+
+</html>

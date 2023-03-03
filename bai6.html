@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<h3></h3>
+
+</body>
+
+<script>
+
+    let arr =[];
+    let amount = prompt("Nhap so phan tu cua mang: ");
+    for(let i=0;i<amount;i++)
+    {
+        arr[i] = prompt("Nhap phan tu thu: "+(i+1));
+    }
+    for(let i=0;i<arr.length;i++)
+    {
+        if(arr[i]=='-')
+        {
+            arr[i] = '_';
+        }
+    }
+    document.write(String(arr));
+</script>
+
+</html>

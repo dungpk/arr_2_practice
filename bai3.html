@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<h3></h3>
+
+</body>
+
+<script>
+    let amount=0;
+    let array = [];
+
+    do{
+       amount = +prompt("Nhap so luong phan tu trong mang:");
+       if(isNaN(amount) || amount%1!=0)
+       {
+           alert("so luong phan tu phai la so nguyen");
+       }
+    }while(amount %1!=0)
+
+    for(let i=0;i<amount;i++)
+    {
+        array[i] = prompt("Nhap gia tri cua phan tu thu " +(i+1)+" :");
+    }
+    let count=0;
+    for(let i=0;i<array.length;i++)
+    {
+        count++;
+    }
+    document.write("So luong phan tu la:" + count)
+
+
+</script>
+
+</html>
